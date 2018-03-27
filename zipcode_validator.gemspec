@@ -15,16 +15,15 @@ Gem::Specification.new do |spec|
   spec.description   = 'A simple zipcode validator for Rails 3+, based on ActiveModel and Unicode CLDR.'
   spec.homepage      = 'https://github.com/notus-sh/zipcode_validator'
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = 'https://rubygems.org'
-  else
-    raise 'RubyGems 2.0 or newer is required.'
-  end
+  raise 'RubyGems 2.0 or newer is required.' unless spec.respond_to?(:metadata)
+  spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.require_paths = ['lib']
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
+
+  spec.add_dependency 'twitter_cldr', '~> 4.4.3'
 
   spec.add_development_dependency 'bundler',  '~> 1.16'
   spec.add_development_dependency 'rake',     '~> 10.0'

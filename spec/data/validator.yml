@@ -1,0 +1,119 @@
+---
+common:
+  invalids: &invalids
+    - 'invalid_zipcode'
+    - 'D0D0D0'
+    - 'C2H5OH'
+    - '122-12345'
+    - '12345-12345'
+    - '124'
+countries:
+  AR:
+    valids:   ['B4860ABC', 'C1420']
+    invalids: *invalids
+  AT:
+    valids:   ['1040', '4053', '5102', '6561', '8522']
+    invalids: ['a-1080']
+  AU:
+    valids:   ['9310']
+    invalids: *invalids
+  BE:
+    valids:   ['1457', '2223', '3700', '9051', '9930']
+    invalids: ['01190']
+  BR:
+    valids:   ['24210-325', '24210325', '72315-500', '72315500']
+    invalids: ['723155']
+  CA:
+    valids:   ['A1J2Z9']
+    invalids: *invalids
+  CL:
+    valids:   ['1234567']
+    invalids: *invalids
+  CZ:
+    valids:   ['12000', '721 00']
+    invalids: *invalids
+  DE:
+    valids:   ['06774', '16341', '30629', '40231', '61381', '94036']
+    invalids: *invalids
+  EE:
+    valids:   ['10123']
+    invalids: *invalids
+  ES:
+    valids:   ['02007', '19117', '25690', '33554', '50021', '93108']
+    invalids: ['1234', '635089']
+  FR:
+    valids:   ['07240', '21560', '73350', '92410', '98 025']
+    invalids: ['211130', '3483']
+  MC:
+    valids:   ['98025']
+    invalids: []
+  GB:
+    valids:   ['AB21 9BG', 'AB387AQ', 'b20 1la', 'B5 4TU', 'B604Nh', 'Bd13 5HF ',
+               'bh140lp', 'EC2A 2RS', 'G1 1DT', ' HG1 2HU', 'se153qj', 'YO176QX']
+    invalids: ['BL9OLU', 'EC1A &BE', 'FU3 3AP', 'FY 8 4PL', 'La 16 7du', 'p09 2qn',
+               'PE19  5YN','SN25-3AD', 'sso 9la', 'Sy4 2 EP', 'Ts 18 1SL',
+               'UB6 7 AU', 'Y010 5DD']
+  HK:
+    valids:   []
+    invalids: *invalids
+  IE:
+    valids:   ['A000000', 'A230984', 'D02 AF30', 'Y631FHK']
+    invalids: *invalids
+  IL:
+    valids:   ['1029200', '8800000', '90001']
+    invalids: *invalids
+  IT:
+    valids:   ['00142', '04020', '19124', '73043', '86039', '97019']
+    invalids: *invalids
+  JP:
+    valids:   ['102-9200', '1029200', '155-0031', '1550031', '207-1000',
+               '408-0301']
+    invalids: *invalids
+  KE:
+    valids:   ['12345']
+    invalids: *invalids
+  KR:
+    valids:   ['11011'] #, '110-110', '72315', '723-150']
+    invalids: *invalids
+  LT:
+    valids:   ['00110'] # A 'LT-' prefix is be allowed.
+    invalids: *invalids
+  LU:
+    valids:   ['5635']
+    invalids: *invalids
+  MD:
+    valids:   ['2001']  # A 'MD-' prefix is be allowed
+    invalids: ['12345', 'MD-21AA', 'MD2101']
+  MU:
+    valids:   ['15325', '153BU123']
+    invalids: *invalids
+  NL:
+    valids:   ['1062XK', '1188 DP', '2291 cs', '4621ja', '7511jv'] # A 'NL-' prefix is be allowed
+    invalids: ['3723 AHK', '373 HK']
+  NZ:
+    valids:   ['9310']
+    invalids: ['12345', 'C1424CHN']
+  PA:
+    valids:   ['']
+    invalids: ['10800', '369', 'A341']
+  PN:
+    valids:   ['PCRN 1ZZ']
+    invalids: *invalids
+  PT:
+    valids:   ['1500-556', '3730-106', '4400-004', '4500-250', '7040-114']
+    invalids: ['1350', '1600_612', '4500-2500', '6350']
+  RS:
+    valids:   ['21000']
+    invalids: *invalids
+  RU:
+    valids:   ['624800']
+    invalids: *invalids
+  SE:
+    valids:   ['16345', '18738', '18753', '21133', '21851']
+    invalids: *invalids
+  SK:
+    valids:   ['094 12', '83102', '911 05']
+    invalids: *invalids
+  US:
+    valids:   ['12345', '12345 1234', '12345-1234']
+    invalids: ['1234', '12345-12345']
