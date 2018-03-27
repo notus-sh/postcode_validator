@@ -7,6 +7,7 @@ require 'zipcode_validator/version'
 Gem::Specification.new do |spec|
   spec.name          = 'zipcode_validator'
   spec.version       = ZipcodeValidator::VERSION
+  spec.licenses      = ['Apache-2.0']
   spec.authors       = ['Gaël-Ian Havard']
   spec.email         = ['gael-ian@notus.sh']
 
