@@ -1,21 +1,32 @@
 # frozen_string_literal: true
 
-require 'zipcode_validator/version'
 require 'twitter_cldr'
 
-# A simple ZIP-code validator
+begin
+  # ActiveModel integration
+  require 'active_model'
+  require 'active_support/i18n'
+  require 'active_model/validations/postcode_validator'
+
+  ActiveSupport.on_load(:i18n) do
+    I18n.load_path << Dir[File.expand_path(File.join(__dir__, '..', 'locales', '*.yml')).to_s]
+  end
+rescue LoadError # rubocop:disable Lint/HandleExceptions
+end
+
+# A simple  postcode validator
 #
 # Can be used to validate a post code, regarding a country specified through the
 # :country option as an ISO-3166-2 code.
-class ZipcodeValidator
+class PostcodeValidator
   # Package specific error class
   class Error < StandardError; end
 
-  def valid?(zip_code, options = {})
-    iso_code = country_as_iso(options)
-    zip_code = zip_code.to_s.strip
-    postal_codes = postal_codes_for(iso_code)
-    postal_codes ? postal_codes.valid?(zip_code) : zip_code.blank?
+  def valid?(postcode, options = {})
+    iso = country_as_iso(options)
+    postcode = postcode.to_s.strip
+    validator = validator_for(iso)
+    validator ? validator.valid?(postcode) : postcode.blank?
   end
 
   protected
@@ -30,8 +41,8 @@ class ZipcodeValidator
     raise Error, e.message
   end
 
-  def postal_codes_for(iso_code)
-    TwitterCldr::Shared::PostalCodes.for_territory(iso_code)
+  def validator_for(iso)
+    TwitterCldr::Shared::PostalCodes.for_territory(iso)
   rescue TwitterCldr::Shared::InvalidTerritoryError
     # No validator exists for :iso_code, this country may not use postcodes at all.
     nil

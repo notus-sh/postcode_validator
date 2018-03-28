@@ -1,16 +1,27 @@
 PATH
   remote: .
   specs:
-    zipcode_validator (0.1.0)
+    postcode_validator (0.1.0)
       twitter_cldr (~> 4.4.3)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (5.1.5)
+      activesupport (= 5.1.5)
+    activesupport (5.1.5)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
     ast (2.4.0)
     camertron-eprun (1.1.1)
     cldr-plurals-runtime-rb (1.0.1)
+    concurrent-ruby (1.0.5)
     diff-lcs (1.3)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
+    minitest (5.11.3)
     parallel (1.12.1)
     parser (2.5.0.5)
       ast (~> 2.4.0)
@@ -51,11 +62,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemodel (> 3.2.0)
+  activesupport (> 3.2.0)
   bundler (~> 1.16)
+  postcode_validator!
   rake (~> 10.0)
   rspec (~> 3.7.0)
   rubocop
-  zipcode_validator!
 
 BUNDLED WITH
    1.16.1

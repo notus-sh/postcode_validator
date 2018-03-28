@@ -1,0 +1,5 @@
+---
+en:
+  errors:
+    messages:
+      invalid_postcode: "is not a valid postcode"
