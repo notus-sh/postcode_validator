@@ -1,5 +1,7 @@
 # PostcodeValidator
 
+[![Build Status](https://travis-ci.org/notus-sh/postcode_validator.svg?branch=master)](https://travis-ci.org/notus-sh/postcode_validator)
+
 A simple postcode validator based on the Unicode CLDR project, with an optional integration with ActiveModel.
 
 ## Installation
