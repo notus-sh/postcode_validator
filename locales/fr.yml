@@ -2,4 +2,4 @@
 fr:
   errors:
     messages:
-      invalid_zipcode: "n'est pas un code postal valide"
+      invalid_postcode: "n'est pas un code postal valide"

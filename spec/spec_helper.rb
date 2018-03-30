@@ -43,8 +43,3 @@ require 'postcode_validator'
 def load_data(name)
   YAML.load_file("spec/data/#{name}.yml")
 end
-
-class TestModel
-  include ActiveModel::Model
-  attr_accessor :zipcode, :country
-end
