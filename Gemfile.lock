@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    postcode_validator (0.1.0)
+    postcode_validator (1.0.0)
       twitter_cldr (~> 4.4.3)
 
 GEM
