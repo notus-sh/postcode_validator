@@ -11,7 +11,7 @@ begin
   ActiveSupport.on_load(:i18n) do
     I18n.load_path += Dir[File.expand_path(File.join(__dir__, '..', 'locales', '*.yml')).to_s]
   end
-rescue LoadError # rubocop:disable Lint/HandleExceptions
+rescue LoadError # rubocop:disable Lint/SuppressedException
 end
 
 # A simple postcode validator
@@ -33,6 +33,7 @@ class PostcodeValidator
 
   def country_as_iso(options)
     raise Error, 'Missing :country option' unless options.key?(:country) && !options[:country].nil?
+
     iso = TwitterCldr::Shared::Territories.normalize_territory_code(options[:country])
 
     # raise ArgumentError if :iso is not a valid territory code

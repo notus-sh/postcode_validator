@@ -8,7 +8,7 @@ module ActiveModel
       def validate_each(record, attribute, value)
         country = option_call(record, :country)
         record.errors.add(attribute, :invalid_postcode) unless validator.valid?(value, country: country)
-      rescue ::PostcodeValidator::Error # rubocop:disable Lint/HandleExceptions
+      rescue ::PostcodeValidator::Error
         # When :country is not a valid country, just skip postcode validation
         # :country validation is developer's responsability
       end
