@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^(test|spec|features)/})
   end
 
-  spec.add_runtime_dependency     'twitter_cldr',   '~> 4.4.3'
+  spec.add_runtime_dependency     'twitter_cldr',   '> 4.4.0'
 
   # Optional dependencies, used in tests
   spec.add_development_dependency 'activemodel',    '> 3.2.0'
