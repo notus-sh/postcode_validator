@@ -1,6 +1,6 @@
 ---
-common:
-  invalids: &invalids
+defaults: &defaults
+  invalids:
     - 'invalid_zipcode'
     - 'D0D0D0'
     - 'C2H5OH'
@@ -9,14 +9,14 @@ common:
     - '124'
 countries:
   AR:
+    <<: *defaults
     valids:   ['B4860ABC', 'C1420']
-    invalids: *invalids
   AT:
     valids:   ['1040', '4053', '5102', '6561', '8522']
     invalids: ['a-1080']
   AU:
+    <<: *defaults
     valids:   ['9310']
-    invalids: *invalids
   BE:
     valids:   ['1457', '2223', '3700', '9051', '9930']
     invalids: ['01190']
@@ -24,20 +24,20 @@ countries:
     valids:   ['24210-325', '24210325', '72315-500', '72315500']
     invalids: ['723155']
   CA:
+    <<: *defaults
     valids:   ['A1J2Z9']
-    invalids: *invalids
   CL:
+    <<: *defaults
     valids:   ['1234567']
-    invalids: *invalids
   CZ:
+    <<: *defaults
     valids:   ['12000', '721 00']
-    invalids: *invalids
   DE:
+    <<: *defaults
     valids:   ['06774', '16341', '30629', '40231', '61381', '94036']
-    invalids: *invalids
   EE:
+    <<: *defaults
     valids:   ['10123']
-    invalids: *invalids
   ES:
     valids:   ['02007', '19117', '25690', '33554', '50021', '93108']
     invalids: ['1234', '635089']
@@ -54,39 +54,39 @@ countries:
                'PE19  5YN','SN25-3AD', 'sso 9la', 'Sy4 2 EP', 'Ts 18 1SL',
                'UB6 7 AU', 'Y010 5DD']
   HK:
+    <<: *defaults
     valids:   []
-    invalids: *invalids
   IE:
+    <<: *defaults
     valids:   ['A000000', 'A230984', 'D02 AF30', 'Y631FHK']
-    invalids: *invalids
   IL:
+    <<: *defaults
     valids:   ['1029200', '8800000', '90001']
-    invalids: *invalids
   IT:
+    <<: *defaults
     valids:   ['00142', '04020', '19124', '73043', '86039', '97019']
-    invalids: *invalids
   JP:
+    <<: *defaults
     valids:   ['102-9200', '1029200', '155-0031', '1550031', '207-1000',
                '408-0301']
-    invalids: *invalids
   KE:
+    <<: *defaults
     valids:   ['12345']
-    invalids: *invalids
   KR:
+    <<: *defaults
     valids:   ['11011'] #, '110-110', '72315', '723-150']
-    invalids: *invalids
   LT:
+    <<: *defaults
     valids:   ['00110'] # A 'LT-' prefix is be allowed.
-    invalids: *invalids
   LU:
+    <<: *defaults
     valids:   ['5635']
-    invalids: *invalids
   MD:
     valids:   ['2001']  # A 'MD-' prefix is be allowed
     invalids: ['12345', 'MD-21AA', 'MD2101']
   MU:
+    <<: *defaults
     valids:   ['15325', '153BU123']
-    invalids: *invalids
   NL:
     valids:   ['1062XK', '1188 DP', '2291 cs', '4621ja', '7511jv'] # A 'NL-' prefix is be allowed
     invalids: ['3723 AHK', '373 HK']
@@ -97,23 +97,23 @@ countries:
     valids:   ['']
     invalids: ['10800', '369', 'A341']
   PN:
+    <<: *defaults
     valids:   ['PCRN 1ZZ']
-    invalids: *invalids
   PT:
     valids:   ['1500-556', '3730-106', '4400-004', '4500-250', '7040-114']
     invalids: ['1350', '1600_612', '4500-2500', '6350']
   RS:
+    <<: *defaults
     valids:   ['21000']
-    invalids: *invalids
   RU:
+    <<: *defaults
     valids:   ['624800']
-    invalids: *invalids
   SE:
+    <<: *defaults
     valids:   ['16345', '18738', '18753', '21133', '21851']
-    invalids: *invalids
   SK:
+    <<: *defaults
     valids:   ['094 12', '83102', '911 05']
-    invalids: *invalids
   US:
     valids:   ['12345', '12345 1234', '12345-1234']
     invalids: ['1234', '12345-12345']
