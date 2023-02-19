@@ -1,6 +1,6 @@
 # PostcodeValidator
 
-[![Build Status](https://travis-ci.com/notus-sh/postcode_validator.svg?branch=master)](https://travis-ci.com/notus-sh/postcode_validator)
+[![Unit tests](https://github.com/notus-sh/postcode_validator/actions/workflows/unit-tests.yml/badge.svg?branch=main)](https://github.com/notus-sh/postcode_validator/actions/workflows/unit-tests.yml)
 [![Gem Version](https://badge.fury.io/rb/postcode_validator.svg)](https://badge.fury.io/rb/postcode_validator)
 
 A simple postcode validator based on the Unicode CLDR project, with an optional integration with ActiveModel.

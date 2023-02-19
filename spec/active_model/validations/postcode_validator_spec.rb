@@ -10,7 +10,7 @@ describe ActiveModel::Validations::PostcodeValidator do
       expect(subject).to respond_to(:validates_as_postcode)
 
       expect(subject).to receive(:validates_with)
-        .with(ActiveModel::Validations::PostcodeValidator, attributes: [:zipcode], country: 'US')
+        .with(ActiveModel::Validations::PostcodeValidator, { attributes: [:zipcode], country: 'US' })
       subject.validates :zipcode, postcode: { country: 'US' }
     end
 

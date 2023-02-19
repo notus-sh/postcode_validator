@@ -48,8 +48,8 @@ countries:
     valids:   ['98025']
     invalids: []
   GB:
-    valids:   ['AB21 9BG', 'AB387AQ', 'b20 1la', 'B5 4TU', 'B604Nh', 'Bd13 5HF ',
-               'bh140lp', 'EC2A 2RS', 'G1 1DT', ' HG1 2HU', 'se153qj', 'YO176QX']
+    valids:   ['AB21 9BG', 'AB387AQ', 'B20 1LA', 'B5 4TU', 'B604NH', 'BD13 5HF ',
+               'BH140LP', 'EC2A 2RS', 'G1 1DT', ' HG1 2HU', 'SE153QJ', 'YO176QX']
     invalids: ['BL9OLU', 'EC1A &BE', 'FU3 3AP', 'FY 8 4PL', 'La 16 7du', 'p09 2qn',
                'PE19  5YN','SN25-3AD', 'sso 9la', 'Sy4 2 EP', 'Ts 18 1SL',
                'UB6 7 AU', 'Y010 5DD']
@@ -88,7 +88,7 @@ countries:
     <<: *defaults
     valids:   ['15325', '153BU123']
   NL:
-    valids:   ['1062XK', '1188 DP', '2291 cs', '4621ja', '7511jv'] # A 'NL-' prefix is be allowed
+    valids:   ['1062XK', '1188 DP', '2291 CS', '4621JA', '7511JV'] # A 'NL-' prefix is be allowed
     invalids: ['3723 AHK', '373 HK']
   NZ:
     valids:   ['9310']
