@@ -29,7 +29,7 @@ module ActiveModel
       end
     end
 
-    module HelperMethods #:nodoc:
+    module HelperMethods # :nodoc:
       # Validates whether the value of the specified attribute is a valid zip code
       #
       #   class Address < ActiveRecord::Base

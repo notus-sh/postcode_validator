@@ -33,14 +33,14 @@ shared_examples 'a correct validator for the given country' do
   it 'that accept valid postcodes' do
     zipcodes['valids'].shuffle.each do |postcode|
       subject.zipcode = postcode
-      expect(subject.valid?).to be_truthy
+      expect(subject).to be_valid
     end
   end
 
   it 'that reject invalid postcodes' do
     zipcodes['invalids'].shuffle.each do |postcode|
       subject.zipcode = postcode
-      expect(subject.valid?).to be_falsey
+      expect(subject).not_to be_valid
     end
   end
 end

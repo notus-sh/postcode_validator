@@ -37,15 +37,4 @@ RSpec.configure do |config|
   end
 end
 
-require 'active_model'
-require 'postcode_validator'
-
-def load_data(name)
-  source = "spec/data/#{name}.yml"
-
-  begin
-    YAML.load_file(source, aliases: true)
-  rescue ArgumentError
-    YAML.load_file(source)
-  end
-end
+Dir[File.join(__dir__, 'support', '**', '*.rb')].sort.each { |f| require f }
