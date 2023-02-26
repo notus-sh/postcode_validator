@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata = {
     'allowed_push_host' => 'https://rubygems.org',
+    'rubygems_mfa_required' => 'true',
 
     'bug_tracker_uri' => 'https://github.com/notus-sh/postcode_validator/issues',
     'changelog_uri' => 'https://github.com/notus-sh/postcode_validator/blob/master/CHANGELOG.md',
