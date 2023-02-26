@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
     'rubygems_mfa_required' => 'true',
 
     'bug_tracker_uri' => 'https://github.com/notus-sh/postcode_validator/issues',
-    'changelog_uri' => 'https://github.com/notus-sh/postcode_validator/blob/master/CHANGELOG.md',
+    'changelog_uri' => 'https://github.com/notus-sh/postcode_validator/blob/main/CHANGELOG.md',
     'homepage_uri' => 'https://github.com/notus-sh/postcode_validator',
     'source_code_uri' => 'https://github.com/notus-sh/postcode_validator',
     'funding_uri' => 'https://opencollective.com/notus-sh'
