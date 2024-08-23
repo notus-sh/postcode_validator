@@ -19,7 +19,7 @@ end
 
 def dynamicaly_validated_klass
   Class.new(TestModel) do
-    validates_as_postcode :zipcode, country: ->(instance) { instance.country }
+    validates_as_postcode :zipcode, country: lambda(&:country)
   end
 end
 
