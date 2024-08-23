@@ -38,7 +38,7 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 2.6'
 
-  spec.add_runtime_dependency     'twitter_cldr',   '> 4.4.0'
+  spec.add_dependency 'twitter_cldr', '> 4.4.0'
 
   # Optional dependencies, used in tests
   spec.add_development_dependency 'activemodel',    '> 3.2.0'
