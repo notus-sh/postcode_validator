@@ -36,7 +36,7 @@ Gem::Specification.new do |spec|
     f.match(excluded_dirs) || excluded_files.include?(f)
   end
 
-  spec.required_ruby_version = '>= 2.6'
+  spec.required_ruby_version = '>= 2.7'
 
   spec.add_dependency 'twitter_cldr', '> 4.4.0'
 
