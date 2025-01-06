@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Changed
 
+* Add Ruby 3.4 to the test matrix (#15)
 * Add Rails 8.0 to the test matrix (#14)
 * Add Ruby 2.7 (Rails 7.0 minimum requirements) to the test matrix (#13)
 * Remove Rails 6.1 from the test matrix (#13)

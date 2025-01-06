@@ -3,4 +3,7 @@
 source 'https://rubygems.org'
 
 gemspec path: '../..'
+gem 'logger'
+gem 'mutex_m'
+gem 'bigdecimal'
 gem 'activemodel', '~> 7.0.0'
