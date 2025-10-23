@@ -2,6 +2,7 @@
 
 class TestModel
   include ActiveModel::Model
+
   attr_accessor :zipcode, :country
 end
 
