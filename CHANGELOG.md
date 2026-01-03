@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Changed
 
+* Remove Ruby 3.1 from the test matrix (#14)
 * Add Ruby 4.0 to the test matrix (#23)
 
 ## Version 1.1.0 (2025-10-23)
